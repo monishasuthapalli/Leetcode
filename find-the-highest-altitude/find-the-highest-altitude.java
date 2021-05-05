@@ -6,7 +6,7 @@ class Solution {
             result[i]=gain[i]+result[i-1];
         }
         int max=0;
-        for(int j=0;j<result.length;j++){
+        for(int j=0;j<gain.length;j++){
             if(result[j]>max){
                 max=result[j];
             }
