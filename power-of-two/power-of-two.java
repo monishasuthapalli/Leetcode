@@ -1,7 +1,17 @@
 class Solution {
     public boolean isPowerOfTwo(int n) {
-       if(n<=0)
+        
+        if(n<0)
             return false;
-     return (int)(Math.ceil(Math.log10(n)/Math.log10(2))) == (int)      (Math.floor(Math.log10(n)/Math.log10(2)));
+        long i=1;
+        while(i<=n)
+        {
+            if(i==n)
+                return true;
+            i=i*2;
+            
+        }
+        return false;
+        
     }
 }
